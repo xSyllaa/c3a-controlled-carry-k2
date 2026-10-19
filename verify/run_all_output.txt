@@ -1,0 +1,16 @@
+== 1. rebuild cost histogram from source (finite_k2.c, ~40 s, ~1.5 GB RAM)
+wrote hist + meta (x-independent histogram; Z2/P+ info at certificate x 0x1.ffde1bafccc06p-1, binary64) Z2=297948.17263543291 sqrtZ2=545.8462903010635 theta_inf_info=1.1928155577886284
+meta ok    (x-independent fields + certificate x match data/k2_meta.json)
+== 2. independent histogram builder (hist_indep.c)
+sha256 ok  data/k2_cost_hist.tsv
+sha256 ok  $TMP/k2_cost_hist.tsv
+sha256 ok  $TMP/my_hist.tsv
+sumset ok  (data/sumset.txt = independently rebuilt M+M)
+== 3. PRIMARY certificate (MPFR directed rounding + Robbins; stdlib python)
+PASS: theta_lo = 1.192815557092... > 1.19281555 : True
+== 4. toy brute force of the construction (q=4,6)
+TOY OK
+== 5. secondary checkers (mpmath)
+secondary PASS
+independent PASS  (n0=3362808316958, C=26096544438312721237750, floor8=1.19281555, theta=1.19281555709298624898561021713)
+ALL CHECKS PASS: C_3a > 1.19281555   (secondary checkers: run)
