@@ -53,8 +53,8 @@ Exact data: n₀ = 3362808316958, C = 26096544438312721237750, |M| = 5869, |M+M|
 ## AI-use disclosure and responsibility
 This work was carried out with an AI agent pipeline (Grok Bot) directed by Sylla: it searched parameters, wrote and ran
 the checkers, drafted this package and the theorem note, and ran adversarial "skeptic" reviews of the claim.
-Sylla (xSyllaa) directed the work, reviewed the argument and the outputs, and takes responsibility for the result.
-All references were checked against the cited sources (K2026b at commit 352ab86, the 3a page and CONTRIBUTING.md).
+Sylla (xSyllaa) directed the work and takes responsibility for the result.
+The pipeline checked all references against the cited sources (K2026b at commit 352ab86, the 3a page and CONTRIBUTING.md).
 
 ## References
 - [K2026b] L. Kleinwaks, *Improved lower bound for the Gyarmati–Hennecart–Ruzsa sum–difference constant using masked digits and controlled carries*,
