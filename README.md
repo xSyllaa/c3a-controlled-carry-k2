@@ -1,10 +1,12 @@
-# C_{3a} > 1.19281555: a finite k = 2 controlled-carry instance (DRAFT, local only, not yet published)
+# C_{3a} > 1.19281555: a finite k = 2 controlled-carry instance
 
 **Author / responsible human:** Sylla ([@xSyllaa](https://github.com/xSyllaa)).
-**Status:** draft, not yet published or submitted. On 2026-10-19 three adversarial replays run inside the same AI pipeline (fresh contexts, each with its own code and
+**Status:** public verification package, submitted on 2026-10-19 to teorth/optimizationproblems as
+[PR #238](https://github.com/teorth/optimizationproblems/pull/238), which links a pinned commit of this repository.
+Not peer-reviewed and not externally reviewed. On 2026-10-19 three adversarial replays run inside the same AI pipeline (fresh contexts, each with its own code and
 its own histogram rebuild) confirmed the value, and a hostile review found no mathematical gap. This is **not** an
 independent third-party replay in the sense of CONTRIBUTING; there has been no external review yet.
-Hosting (public repo and/or Zenodo DOI + pinned commit) still to be decided by Sylla.
+Hosted at https://github.com/xSyllaa/c3a-controlled-carry-k2 (no Zenodo DOI).
 
 ## Result
 For the Gyarmati–Hennecart–Ruzsa sum–difference constant ([page 3a](https://teorth.github.io/optimizationproblems/constants/3a.html)),
