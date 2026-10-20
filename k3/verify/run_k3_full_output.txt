@@ -1,0 +1,20 @@
+sha256 ok  /home/box/v3r1t4s/publish/c3a-finite-k3-staging/k3/data/k3_cost_hist.tsv
+== rebuild A (carry automaton, low-heavy)
+== rebuild B (c2 by DxD scatter, top-heavy)
+sha256 ok  /tmp/tmp.wEYjV7jGue/k3A.tsv
+sha256 ok  /tmp/tmp.wEYjV7jGue/k3B.tsv
+sha256 ok  k=2 by-product of A = ../data/k2_cost_hist.tsv
+== PRIMARY k=3 certificate (MPFR directed rounding + Robbins)
+PASS: theta_lo = 1.193596809129... > 1.19359680 : True
+== regression: same script at k=2 reproduces the PR #238 certificate
+PASS: theta_lo = 1.192815557092... > 1.19281555 : True
+k=2 regression ok (n0, C, theta_lo identical to certificates/cert_primary_ell_1e18.json)
+== negative control (claim 1.19359681 must fail)
+negative control ok
+== secondary (mpmath.iv intervals, exact low-cost prefix, sampled residues)
+secondary PASS
+ALL k=3 CHECKS PASS: C_3a > 1.19359680   (secondary: run)
+
+real	20m50.283s
+user	67m56.783s
+sys	0m13.244s
